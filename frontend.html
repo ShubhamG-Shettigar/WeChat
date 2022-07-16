@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeChat- Real Time Chat Application using NodeJs and Socket.IO</title>
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>  
+    <script defer src="JavaScript/client.js"></script>
+    <!-- defer helps in running the script in background -->
+    <!-- so that whenever the DOM is ready, the script runs -->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+
+    
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="CSS/emoji.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo.png" alt="">
+        <h1>Welcome to WeChat Application</h1>
+    </nav>
+    <div class="container">
+        <div class="navv">Let's ChitChat..</div>
+        <!-- <div class="message right">Shubham</div>
+        <div class="message left">Shubham2</div> -->
+    </div>
+
+    <div class="send">
+        <form action="#" id="send-container">
+            <!-- <input type="file"> -->
+            <input type="text" name="msg" id="msg" data-emojiable="true" placeholder="Type your message">
+            <button class="btn" type="submit">Send</button>
+            <button class="btn" type="reset">Delete</button>
+            <!-- <button class="btn" type="menu">De</button>   -->
+        </form>
+    </div>
+
+
+
+
+    <script src="lib/js/config.js"></script>
+    <script src="lib/js/util.js"></script>
+    <script src="lib/js/jquery.emojiarea.js"></script>
+    <script src="lib/js/emoji-picker.js"></script>
+
+
+
+</body>
+</html>
